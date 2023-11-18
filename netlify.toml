@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  environment = { API_URL = "/api" }
+
+[[redirects]]
+  from = "/api"
+  to = "https://manasa-node.netlify.app/api"
+  status = 200
